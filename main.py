@@ -40,7 +40,7 @@ for itera in range(1, 100):
         for i in pAr:
             messageFin = messageFin + str(i)
 
-        vk.wall.post(owner_id=-198135266, message=messageFin, publish_date=unixTime+oneHour*it)
+        vk.wall.post(owner_id=login_info.get("owner_id"), message=messageFin, publish_date=unixTime+oneHour*it)
         it = it+1
     except Exception:
         print("Exception: " + urlReal)
