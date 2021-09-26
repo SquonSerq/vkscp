@@ -64,6 +64,7 @@ while True:
             print("Posts number: " + str(it) + "\n")
             it = it+1
             exceptionCount = 0
+            print("start waiting: "+str(datetime.datetime.now()))
             time.sleep(3600)
             if it%60==0:
                 print("relog in session")
